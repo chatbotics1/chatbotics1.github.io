@@ -1,0 +1,60 @@
+<html>
+    
+<head>
+    <title>Chatbotics</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alata&family=Open+Sans&display=swap');
+        * {
+            color: white;
+        }
+        h1 {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 18px;
+            position: absolute;
+            top: 0px;
+            left: 50px;
+            letter-spacing: 1px;
+        }
+        #logo {
+            width: 36px;
+            vertical-align: middle;
+            padding-right: 5px;
+        }
+        h1 span {
+            position: relative;
+            top: 2px;
+        }
+        p {
+            font-family: 'Alata', sans-serif;
+            width: 50%;
+            font-size: 24px;
+            position: absolute;
+            top: 45%;
+            left: 25%;
+        }
+    </style>
+</head>
+
+<body id="body" style="margin: 0; height: 100%;">
+    <h1><img id="logo" src="logo.png"><span>CHATBOTICS</span></h1>
+    <p>Our mission is to bring the power of large language models to conversational AI systems for the enterprise</p>
+</body>
+
+</html>
+
+<script src="three.min.js"></script>
+<script src="vanta.net.min.js"></script>
+<script>
+VANTA.NET({
+  el: "#body",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  points: 5.00
+})
+</script>
