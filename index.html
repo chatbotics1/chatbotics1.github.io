@@ -19,7 +19,7 @@
             text-align: left;
             width: 100%;
         }
-        #logo {
+        img {
             width: 36px;
             vertical-align: middle;
             padding-right: 5px;
@@ -37,10 +37,13 @@
             left: 25%;
             text-align: center;
         }
-
         @media (max-width: 600px) {
             h1 {
                 text-align: center;
+                top: 50px;
+            }
+            p {
+                top: 33%;
             }
         }
 
@@ -48,12 +51,16 @@
 </head>
 
 <body id="body" style="margin: 0; height: 100%;">
-    <h1><img id="logo" src="logo.png"><span>CHATBOTICS</span></h1>
+    <h1 id="logo"><img src="logo.png"><span>CHATBOTICS</span></h1>
     <p>Our mission is to bring the power of LLMs to everyone</p>
 </body>
 
 </html>
 
+<script>
+    var width = document.getElementById("logo").offsetWidth - 50
+    document.getElementById("logo").style.width = width + "px"
+</script>
 <script src="three.min.js"></script>
 <script src="vanta.net.min.js"></script>
 <script>
