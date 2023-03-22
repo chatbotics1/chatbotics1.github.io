@@ -46,7 +46,6 @@
                 top: 33%;
             }
         }
-
     </style>
 </head>
 
@@ -58,7 +57,8 @@
 </html>
 
 <script>
-    document.getElementById("logo").style.width = document.getElementById("logo").offsetWidth - 50 - document.getElementById("icon").offsetWidth - 5 + "px"
+    document.getElementById("logo").style.width = document.getElementById("logo").offsetWidth - 50 - 2*document.getElementById("icon").offsetWidth + "px"
+    console.log(document.getElementById("icon").offsetWidth)
 </script>
 <script src="three.min.js"></script>
 <script src="vanta.net.min.js"></script>
