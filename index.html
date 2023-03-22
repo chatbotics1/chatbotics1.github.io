@@ -51,14 +51,14 @@
 </head>
 
 <body id="body" style="margin: 0; height: 100%;">
-    <h1 id="logo"><img src="logo.png"><span>CHATBOTICS</span></h1>
+    <h1 id="logo"><img id="icon" src="logo.png"><span>CHATBOTICS</span></h1>
     <p>Our mission is to bring the power of LLMs to everyone</p>
 </body>
 
 </html>
 
 <script>
-    document.getElementById("logo").style.width = document.getElementById("logo").offsetWidth - 50 - 36 - 5 + "px"
+    document.getElementById("logo").style.width = document.getElementById("logo").offsetWidth - 50 - document.getElementById("icon").offsetWidth - 5 + "px"
 </script>
 <script src="three.min.js"></script>
 <script src="vanta.net.min.js"></script>
